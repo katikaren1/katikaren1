@@ -14,4 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt update && sudo apt upgrade -y
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+source $HOME/.cargo/env
+
+apt install ufw -y 
+ufw allow ssh 
+ufw allow https 
+ufw allow http 
+ufw allow 4133
+ufw allow 3033
+ufw enable
